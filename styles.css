@@ -1,0 +1,124 @@
+html {
+    background:#E5E9E8 url(img.jpg) no-repeat center center fixed; 
+    min-height:100%;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+body {
+    background:transparent;
+    min-height:100%;    
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    line-height: 1.5em;
+    font-size:14px;
+    font-family: Verdana;
+    font-weight: normal;
+}
+
+
+.section { 
+    z-index: 1;
+    min-height:420px;
+    width: 100%; 
+    overflow:auto;
+    height:100%;
+    padding-top:100px;
+    padding-bottom:50px; 
+    display:none;
+    top:0;
+} 
+
+
+@media (min-width: 768px) {
+    .section { padding-top:160px;}
+}
+
+
+#head { 
+    display: block;
+}
+
+
+a { color:#fff; text-decoration: none; }
+a:hover, a:active { color:#fff; text-decoration: underline; }
+
+.title,
+.subtitle { 
+    font-family: 'Open Sans Condensed', Verdana;
+    font-weight:normal;
+    font-size:2.5em;
+    margin-bottom:50px; 
+    color:#FDF9F4; 
+    line-height:1em;
+}
+.subtitle { 
+    line-height:.9em;
+    font-size:2em;
+    margin-top:0;
+    margin-bottom:70px; 
+}
+.tagline { 
+    font-size:1.2em;
+    line-height:1.5em;
+    font-weight:normal;
+    margin-bottom:75px;
+}
+
+.btn{
+    color:#333;
+    text-shadow: none;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border:0 none;
+}
+.btn:hover {
+    color:#000;
+}
+.btn-lg { 
+    padding:16px 30px;
+    font-size:inherit;
+}
+
+.btn-default {
+    background: rgba(255,255,255,.5);
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+    background: rgba(255,255,255,.8);
+}
+
+
+.theme-invert {     
+    color:#222;
+    color:rgba(0,0,0,.8); 
+ }
+.theme-invert a { 
+    color:#178ea5;
+}
+.theme-invert .btn {
+    color:rgba(255,255,255,.8);
+}
+.theme-invert .btn:hover {
+    color:#fff;
+}
+
+.theme-invert .title,
+.theme-invert .subtitle,
+.theme-invert .tagline { 
+    color:#222222; 
+}
+
+.theme-invert .btn-default {
+    background: rgba(0,0,0,.5);
+}
+.theme-invert .btn-default:hover,
+.theme-invert .btn-default:focus,
+.theme-invert .btn-default:active,
+.theme-invert .btn-default.active {
+    background: rgba(0,0,0,.6);
+    color:#fff;
+}
